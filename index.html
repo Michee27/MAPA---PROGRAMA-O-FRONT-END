@@ -1,0 +1,84 @@
+<html lang="pt-BR">
+    <!-- Cabeceio do nadanvegador da página, dinámico com a tela em que estou -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Michee Celestin - Desenvolvedor Web</title>
+        <meta
+            name="description"
+            content="Portfólio pessoal de Michee Celestin, um desenvolvedor web apaixonado por criar soluções criativas e funcionais para a web."
+        />
+        <meta
+            name="keywords"
+            content="desenvolvedor web, portfólio, html, css, javascript, front-end, desenvolvedor, Michee Celestin"
+        />
+        <meta name="author" content="Michee Celestin" />
+
+        <!-- Chama a estilização da tela, o css -->
+
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header da tela com os menus -->
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Michee Celestin</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html" class="active">Início</a></li>
+                        <li><a href="about.html">Sobre Mim</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-menu"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- conteudo main (principal) da tela -->
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <h1>Olá, eu sou Michee Celestin.</h1>
+                    <h2>Um <span id="typing-effect"></span></h2>
+                    <p>
+                        Sou um desenvolvedor web criativo com foco em construir
+                        experiências digitais incríveis. Bem-vindo ao meu
+                        portfólio.
+                    </p>
+                    <a href="portfolio.html" class="btn">Ver meus projetos</a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé da tela -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2024 Michee Celestin. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!-- Cabeceio do nadanvegador da página, dinámico com a tela em que estou -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Contato - Michee Celestin</title>
+        <meta
+            name="description"
+            content="Entre em contato com Michee Celestin para discutir projetos, colaborações ou apenas para dizer um olá."
+        />
+        <meta
+            name="keywords"
+            content="contato, email, formulário, mensagem, desenvolvedor, Michee Celestin"
+        />
+        <meta name="author" content="Michee Celestin" />
+
+        <!-- Chama a estilização da tela, o css -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header da tela com os menus -->
+
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Michee Celestin</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre Mim</a></li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li>
+                            <a href="contact.html" class="active">Contato</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-menu"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- conteudo main (principal) da tela -->
+
+        <main>
+            <section class="contact-section">
+                <div class="container">
+                    <h2>Entre em Contato</h2>
+                    <p>
+                        Tem uma pergunta ou proposta? Sinta-se à vontade para me
+                        enviar uma mensagem.
+                    </p>
+
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Nome:</label>
+                            <input type="text" id="name" name="name" required />
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                            />
+                            <small class="error-message"></small>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem:</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                            ></textarea>
+                            <small class="error-message"></small>
+                        </div>
+                        <button type="submit" class="btn">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                    <div
+                        id="form-success-message"
+                        class="success-message"
+                        style="display: none"
+                    >
+                        Obrigado pelo seu contato! Sua mensagem foi enviada com
+                        sucesso.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé da tela -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2024 Michee Celestin. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

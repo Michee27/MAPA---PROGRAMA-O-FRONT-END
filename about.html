@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!-- Cabeceio do nadanvegador da página, dinámico com a tela em que estou -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Sobre Mim - Michee Celestin</title>
+        <meta
+            name="description"
+            content="Conheça mais sobre Michee Celestin, suas habilidades em desenvolvimento web, e sua paixão por tecnologia e design."
+        />
+        <meta
+            name="keywords"
+            content="sobre, biografia, skills, habilidades, desenvolvedor, Michee Celestin"
+        />
+        <meta name="author" content="Michee Celestin" />
+
+        <!-- Chama a estilização da tela, o css -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header da tela com os menus -->
+
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Michee Celestin</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li>
+                            <a href="about.html" class="active">Sobre Mim</a>
+                        </li>
+                        <li><a href="portfolio.html">Portfólio</a></li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-menu"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- conteudo main (principal) da tela -->
+
+        <main>
+            <section class="about-section">
+                <div class="container">
+                    <h2>Sobre Mim</h2>
+                    <div class="about-content">
+                        <img
+                            src="profile.jpeg"
+                            alt="Foto de perfil de Michee Celestin"
+                            class="profile-pic"
+                        />
+                        <div class="about-text">
+                            <h3>Quem sou eu?</h3>
+                            <p>
+                                Olá! Meu nome é Michee Celestin e sou um
+                                desenvolvedor web apaixonado por criar
+                                interfaces bonitas, funcionais e intuitivas. Com
+                                uma base sólida em HTML, CSS e JavaScript, busco
+                                constantemente aprender novas tecnologias para
+                                transformar ideias em realidade digital.
+                            </p>
+                            <p>
+                                Fora do mundo do código, gosto de explorar
+                                fotografia, ler sobre as últimas tendências em
+                                tecnologia e desfrutar de uma boa xícara de café
+                                enquanto planejo meu próximo projeto.
+                            </p>
+
+                            <h3>Minhas Habilidades</h3>
+                            <ul class="skills-list">
+                                <li>HTML5 & CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>React</li>
+                                <li>Node.js</li>
+                                <li>Design Responsivo</li>
+                                <li>Figma</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Rodapé da tela -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2024 Michee Celestin. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <!-- Cabeceio do nadanvegador da página, dinámico com a tela em que estou -->
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- SEO Meta Tags -->
+        <title>Portfólio - Michee Celestin</title>
+        <meta
+            name="description"
+            content="Explore os projetos de desenvolvimento web de Michee Celestin, incluindo websites, aplicações e outras criações digitais."
+        />
+        <meta
+            name="keywords"
+            content="portfolio, projetos, web design, desenvolvimento, front-end, Michee Celestin"
+        />
+        <meta name="author" content="Michee Celestin" />
+
+        <!-- Chama a estilização da tela, o css -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <!-- Header da tela com os menus -->
+
+        <header>
+            <div class="container">
+                <a href="index.html" class="logo">Michee Celestin</a>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="about.html">Sobre Mim</a></li>
+                        <li>
+                            <a href="portfolio.html" class="active"
+                                >Portfólio</a
+                            >
+                        </li>
+                        <li><a href="contact.html">Contato</a></li>
+                    </ul>
+                </nav>
+                <button
+                    class="hamburger"
+                    id="hamburger-menu"
+                    aria-label="Abrir menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- conteudo main (principal) da tela -->
+
+        <main>
+            <section class="portfolio-section">
+                <div class="container">
+                    <h2>Meus Projetos</h2>
+                    <div class="portfolio-grid">
+                        <!-- Projeto 1 -->
+                        <div
+                            class="project-card"
+                            data-title="Website de E-commerce"
+                            data-description="Um site de e-commerce moderno e responsivo para uma loja de roupas fictícia. Construído com HTML, CSS e JavaScript puro, com funcionalidades de carrinho de compras."
+                            data-image="project1.png"
+                        >
+                            <img
+                                src="project1.png"
+                                alt="Prévia do projeto de E-commerce"
+                            />
+                            <h3>Website de E-commerce</h3>
+                            <button class="btn-details">Ver Detalhes</button>
+                        </div>
+
+                        <!-- Projeto 2 -->
+                        <div
+                            class="project-card"
+                            data-title="Aplicativo de Clima"
+                            data-description="Um aplicativo web que mostra o clima atual de qualquer cidade, utilizando a API OpenWeatherMap. O design é limpo e a experiência do usuário é direta."
+                            data-image="project2.png"
+                        >
+                            <img
+                                src="project2.png"
+                                alt="Prévia do projeto de aplicativo de clima"
+                            />
+                            <h3>Aplicativo de Clima</h3>
+                            <button class="btn-details">Ver Detalhes</button>
+                        </div>
+
+                        <!-- Projeto 3 -->
+                        <div
+                            class="project-card"
+                            data-title="Blog Pessoal"
+                            data-description="Um template de blog com design minimalista, focado na legibilidade. Inclui modo escuro e é totalmente responsivo."
+                            data-image="project3.png"
+                        >
+                            <img
+                                src="project3.png"
+                                alt="Prévia do projeto de blog pessoal"
+                            />
+                            <h3>Blog Pessoal</h3>
+                            <button class="btn-details">Ver Detalhes</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Modal Projeto -->
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <img id="modal-img" src="" alt="Imagem do projeto" />
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <!-- Rodapé da tela -->
+
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; 2024 Michee Celestin. Todos os direitos reservados.
+                </p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
